@@ -21,7 +21,7 @@ public class Topic_2_xpath {
 		driver = new FirefoxDriver();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
-		driver.get("https://www.facebook.com/");
+		driver.get("https://facebook.com/");
 	}
 
 	@Test
@@ -39,21 +39,21 @@ public class Topic_2_xpath {
 
 	@Test
 	public void TC_03_xpath() {
-		// Login form displayed
+	
 		driver.findElement(By.xpath("//input[@type='password']")).click();
 		sleepInSecond(3);
 	}
 	
 	@Test
 	public void TC_04_PartialLinkText() {
-		// Login form displayed
+
 		driver.findElement(By.linkText("Forgotten")).click();
 		sleepInSecond(3);
 	}
 	
 	@Test
 	public void TC_04_Name() {
-		// Login form displayed
+
 		driver.findElement(By.name("email")).sendKeys("abcxyz");
 		sleepInSecond(3);
 	}
@@ -61,8 +61,7 @@ public class Topic_2_xpath {
 	
 	@Test
 	public void TC_05_css() {
-		// Login form displayed
-		driver.findElement(By.cssSelector("#did_submit")).click();
+		driver.findElement(By.cssSelector("button[id='did_submit']")).click();
 		sleepInSecond(3);
 	}
 

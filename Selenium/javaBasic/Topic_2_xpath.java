@@ -40,16 +40,19 @@ public class Topic_2_xpath {
 	@Test
 	public void  TC_03_css() {
 		driver.findElement(By.cssSelector("button[type='submit']")).click();
+		sleepInSecond(1);
 	}
 	
 	@Test
 	public void  TC_04_linkText() {
 		driver.findElement(By.linkText("Forgotten password?")).click();
+		sleepInSecond(1);
 	}
 	
 	@Test
 	public void  TC_05_PartiallinkText() {
 		driver.findElement(By.partialLinkText("Tiếng")).click();
+		sleepInSecond(1);
 	}
 	
 	

@@ -17,7 +17,7 @@ public class Topic_2_xpath {
 
 	@BeforeClass
 	public void beforeClass() {
-		System.setProperty("webdriver.gecko.driver", projectPath + "\\browserDrivers\\chromedriver.exe");
+		System.setProperty("webdriver.gecko.driver", projectPath + "\\browserDrivers\\geckodriver.exe");
 		driver = new FirefoxDriver();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
@@ -25,45 +25,34 @@ public class Topic_2_xpath {
 	}
 
 	@Test
-	public void TC_01_class() {
-	driver.findElement(By.className("inputtext _55r1 _6luy")).click();
-		sleepInSecond(3);
+	public void TC_01_xpath() {
+	driver.findElement(By.xpath("//input[@type='text']")).sendKeys("thanhphat2511");
+		sleepInSecond(1);
 	}
 
 	@Test
-	public void TC_02_id() {
+	public void TC_02_name() {
 		// Login Page title
-		driver.findElement(By.id("pass")).click();
-		sleepInSecond(3);
-	}
-
-	@Test
-	public void TC_03_xpath() {
-	
-		driver.findElement(By.xpath("//input[@type='password']")).click();
-		sleepInSecond(3);
+		driver.findElement(By.name("pass")).sendKeys("abcxyz");
+		sleepInSecond(1);
 	}
 	
 	@Test
-	public void TC_04_PartialLinkText() {
-
-		driver.findElement(By.linkText("Forgotten")).click();
-		sleepInSecond(3);
+	public void  TC_03_css() {
+		driver.findElement(By.cssSelector("button[type='submit']")).click();
 	}
 	
 	@Test
-	public void TC_04_Name() {
-
-		driver.findElement(By.name("email")).sendKeys("abcxyz");
-		sleepInSecond(3);
+	public void  TC_04_linkText() {
+		driver.findElement(By.linkText("Forgotten password?")).click();
 	}
-	
 	
 	@Test
-	public void TC_05_css() {
-		driver.findElement(By.cssSelector("button[id='did_submit']")).click();
-		sleepInSecond(3);
+	public void  TC_05_PartiallinkText() {
+		driver.findElement(By.partialLinkText("Tiếng")).click();
 	}
+	
+	
 
 	@AfterClass
 	public void afterClass() {

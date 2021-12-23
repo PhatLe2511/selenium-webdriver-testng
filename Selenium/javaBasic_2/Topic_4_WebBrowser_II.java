@@ -13,7 +13,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 
-public class Topic_14_WebBrowser {
+public class Topic_4_WebBrowser_II {
 
 	String projectPath = System.getProperty("user.dir");
 	WebDriver driver;

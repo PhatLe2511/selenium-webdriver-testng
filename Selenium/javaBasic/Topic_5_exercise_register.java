@@ -22,6 +22,8 @@ public class Topic_5_exercise_register {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		driver.get("https://alada.vn/tai-khoan/dang-ky.html");
+		
+		
 	}
 	
 	@Test 

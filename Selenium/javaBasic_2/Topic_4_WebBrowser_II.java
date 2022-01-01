@@ -3,7 +3,6 @@ package javaBasic_2;
 import static org.testng.Assert.assertTrue;
 
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -26,7 +25,6 @@ public class Topic_4_WebBrowser_II {
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
-		
 	}
 	
 	@Test

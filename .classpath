@@ -8,5 +8,6 @@
 	<classpathentry kind="src" path="Selenium"/>
 	<classpathentry kind="lib" path="libraby/selenium-server-standalone-3.141.59.jar" sourcepath="libraby/client-combined-3.141.59-sources.jar"/>
 	<classpathentry kind="lib" path="libraby/testng-6.14.3.jar"/>
+	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

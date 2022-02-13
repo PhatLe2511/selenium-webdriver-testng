@@ -72,7 +72,6 @@ public class Topic_08_Custom_Dropdown {
 		selectInCustomDropDownList("li.dropdown-toggle", "ul.dropdown-menu>li", "Third Option");
 		Assert.assertEquals(driver.findElement(By.cssSelector("li.dropdown-toggle")).getText(), "Third Option");
 	}
-
 	
 	public void TC_04_Angular_select() {
 		driver.get("https://tiemchungcovid19.gov.vn/portal/register-person");
@@ -105,7 +104,6 @@ public class Topic_08_Custom_Dropdown {
 		enterToCustomDropDownList("div#fade-place>input[type='text']", "div#fade-place li", "Audi");
 	}
 	
-	@Test
 	public void TC_06_Angular_Enter() {
 		driver.get("https://tiemchungcovid19.gov.vn/portal/register-person");
 		

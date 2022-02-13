@@ -31,7 +31,6 @@ public class Topic_08_Custom_Dropdown {
 		
 	}
 	
-	
 	public void TC_01_JQuery() {
 
 		driver.get("https://jqueryui.com/resources/demos/selectmenu/default.html");		
@@ -126,8 +125,6 @@ public class Topic_08_Custom_Dropdown {
 //		enterToCustomDropDownList(projectPath, projectPath, projectPath)
 	}
 	
-	
-	
 	public void selectInCustomDropDownList(String parentLocator, String childLocator, String expectedText) {
 		driver.findElement(By.cssSelector(parentLocator)).click();
 		
@@ -207,7 +204,6 @@ public class Topic_08_Custom_Dropdown {
 	public void AfterClass() {
 		driver.quit();
 	}
-	
 	
 	public void SleepInSecond(long second) {
 		try {

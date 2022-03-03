@@ -103,6 +103,7 @@ public class Topic_08_Custom_Dropdown {
 		enterToCustomDropDownList("div#fade-place>input[type='text']", "div#fade-place li", "Audi");
 	}
 	
+	@Test
 	public void TC_06_Angular_Enter() {
 		driver.get("https://tiemchungcovid19.gov.vn/portal/register-person");
 		
@@ -218,4 +219,6 @@ public class Topic_08_Custom_Dropdown {
 		Random rand = new Random();
 		return rand.nextInt(999);
 	}
+	
+	
 }

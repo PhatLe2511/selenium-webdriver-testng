@@ -39,7 +39,7 @@ public class Topic_11_Actions {
 		action = new Actions(driver);
 	}
 	
-	
+	@Test
 	public void TC_01_Hover_I() {
 		driver.get("https://automationfc.github.io/jquery-tooltip/");
 		
@@ -49,6 +49,7 @@ public class Topic_11_Actions {
 		Assert.assertEquals(driver.findElement(By.className("ui-tooltip-content")).getText(), "We ask for your age only for statistical purposes.");
 	}
 	
+	@Test
 	public void TC_02_Hover_II() {
 		driver.get("https://www.myntra.com/");
 		
@@ -63,6 +64,7 @@ public class Topic_11_Actions {
 		Assert.assertTrue(driver.findElement(By.xpath("//span[text()='Kids Home Bath']")).isDisplayed());
 	}
 	
+	@Test
 	public void TC_03_ClickAndHold() {
 		driver.get("https://automationfc.github.io/jquery-selectable/");
 		
@@ -78,6 +80,7 @@ public class Topic_11_Actions {
 		Assert.assertEquals(selectedAllNumbers.size(), 4);
 	}
 	
+	@Test
 	public void TC_04_ClickAndHold_Random() {
 		driver.get("https://automationfc.github.io/jquery-selectable/");
 		
@@ -98,6 +101,7 @@ public class Topic_11_Actions {
 		Assert.assertEquals(selectedAllNumbers.size(), 4);
 	}
 	
+	@Test
 	public void TC_05_double_Click() {
 		driver.get("https://automationfc.github.io/basic-form/index.html");
 		
@@ -112,6 +116,7 @@ public class Topic_11_Actions {
 		Assert.assertEquals(driver.findElement(By.cssSelector("p#demo")).getText(), "Hello Automation Guys!");
 	}
 	
+	@Test
 	public void TC_06_right_Click() {
 		driver.get("http://swisnl.github.io/jQuery-contextMenu/demo.html");
 		
@@ -131,6 +136,7 @@ public class Topic_11_Actions {
 		driver.switchTo().alert().accept();
 	}
 	
+	@Test
 	public void TC_07_DragAndDrop_HTML4() {
 		driver.get("https://automationfc.github.io/kendo-drag-drop/");
 		

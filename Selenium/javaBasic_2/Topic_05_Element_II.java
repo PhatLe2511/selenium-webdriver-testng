@@ -63,7 +63,7 @@ public class Topic_05_Element_II {
 		Assert.assertEquals(driver.findElement(errorPhone).getText(), "Vui lòng nhập số điện thoại.");
 	}
 	
-	@Test
+	
 	public void TC_02_Register_Invalid_Email() {
 		driver.findElement(firstNameTextbox).sendKeys("Le Thanh Phat");
 		driver.findElement(emailTextbox).sendKeys("thanhphat@maii@");

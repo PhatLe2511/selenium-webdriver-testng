@@ -101,7 +101,7 @@ public class Topic_10_Alert {
 		
 		By jsPrompt = By.xpath("//button[text()='Click for JS Prompt']");
 		
-		String sendKeyToText = "Yeu Kieu Anh";
+		String sendKeyToText = "abc";
 		
 		scrollToElement(jsPrompt);
 		

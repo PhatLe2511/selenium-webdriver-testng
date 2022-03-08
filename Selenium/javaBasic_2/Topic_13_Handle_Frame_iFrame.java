@@ -101,7 +101,6 @@ public class Topic_13_Handle_Frame_iFrame {
 			
 		}
 		
-		@Test
 		public void TC_02_Frame() {
 			driver.get("https://netbanking.hdfcbank.com/netbanking/");
 			

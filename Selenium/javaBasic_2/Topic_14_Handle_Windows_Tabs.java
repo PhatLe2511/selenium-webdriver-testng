@@ -124,9 +124,7 @@ public class Topic_14_Handle_Windows_Tabs {
 			
 			getTabTitle("Login");
 			
-			driver.findElement(By.cssSelector("input[value='Log in']")).click();
-			
-			
+			driver.findElement(By.cssSelector("input[value='Log in']")).click();		
 		}
 			
 		

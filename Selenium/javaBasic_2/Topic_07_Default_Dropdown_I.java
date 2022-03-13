@@ -36,7 +36,7 @@ public class Topic_07_Default_Dropdown_I {
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	}
 	
-	@Test
+	
 	public void TC_01_Rode() {
 		 
 		driver.get("https://www.rode.com/wheretobuy");

@@ -32,10 +32,6 @@ public class Topic_06_Textbox_TextArea {
 		editLastName = "Job";
 	}
 	
-	
-	
-	
-	@Test
 	public void TC_01_TextArea_Textbox() {
 		driver.findElement(By.id("txtUsername")).sendKeys("Admin");
 		driver.findElement(By.id("txtPassword")).sendKeys("admin123");
@@ -81,14 +77,16 @@ public class Topic_06_Textbox_TextArea {
 		Assert.assertFalse(driver.findElement(By.id("personal_txtEmpLastName")).isEnabled());
 		Assert.assertFalse(driver.findElement(By.id("personal_txtEmployeeId")).isEnabled());
 	}
-	
-	
+
 	@AfterClass
+
 	public void AfterClass(){
+
 		driver.quit();
 	
 		
 	}	
+	
 	public void SleepInSecond(long second) {
 		try {
 			Thread.sleep(second * 1000);

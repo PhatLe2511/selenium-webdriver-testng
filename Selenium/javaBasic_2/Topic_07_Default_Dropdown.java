@@ -22,7 +22,7 @@ import org.testng.annotations.Test;
 
 
 
-public class Topic_07_Default_Dropdown_I {
+public class Topic_07_Default_Dropdown {
 	WebDriver driver;
 	String projectPath = System.getProperty("user.dir");
 	Select select;

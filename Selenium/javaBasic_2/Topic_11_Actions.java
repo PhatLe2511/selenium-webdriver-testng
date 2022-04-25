@@ -32,7 +32,7 @@ public class Topic_11_Actions {
 	
 	@BeforeClass
 	public void BeforeClass() {
-		System.setProperty("webdriver.chrome.driver", projectPath + "\\browserDrivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", projectPath + "/browserDrivers/chromedriver");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		jsExecutor = (JavascriptExecutor) driver;

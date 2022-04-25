@@ -28,7 +28,7 @@ public class Topic_11_Actions {
 	String projectPath = System.getProperty("user.dir");
 	Actions action;
 	JavascriptExecutor jsExecutor;
-	Alert aler;
+	Alert alert;
 	
 	@BeforeClass
 	public void BeforeClass() {

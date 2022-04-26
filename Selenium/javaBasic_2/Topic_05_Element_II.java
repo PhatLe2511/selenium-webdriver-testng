@@ -21,7 +21,7 @@ public class Topic_05_Element_II {
 		By confirmEmailTextbox = By.id("txtCEmail");
 		By passwordTextbox = By.id("txtPassword");
 		By confirmPasswordTextbox = By.id("txtCPassword");
-		By phoneTextbo = By.id("txtPhone");
+		By phoneTextbox = By.id("txtPhone");
 		By registerButton = By.xpath("//div[@class='field_btn']/button");
 		By errorFirstName = By.id("txtFirstname-error");
 		By errorEmail = By.id("txtEmail-error");

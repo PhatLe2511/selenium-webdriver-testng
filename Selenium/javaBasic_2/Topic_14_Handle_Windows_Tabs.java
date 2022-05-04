@@ -32,7 +32,7 @@ public class Topic_14_Handle_Windows_Tabs {
 	
 		@BeforeClass
 		public void BeforeClass() {
-			System.setProperty("webdriver.chrome.driver", projectPath + "\\browserDrivers\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", projectPath + "browserDrivers/chromedriver");
 			driver = new ChromeDriver();
 			driver.manage().window().maximize();
 			explicitWait = new WebDriverWait(driver, 30);
@@ -139,12 +139,39 @@ public class Topic_14_Handle_Windows_Tabs {
 				String actualTitle = driver.getTitle();
 				
 				if (actualTitle.equals(expectedTitle)) {
-					//Thoát khỏi vong lặp
+					//Thoát  khỏi vong lặp
 					
 					break;
 				}
 			}
 			
+		}
+		
+		public void switchToWindowByID(String expectedID) {
+			Set<String> allTabIDs = driver.getWindowHandles();
+			
+			for (String id : allTabIDs) {
+				if (!id.equals(expectedID)) {
+					driver.switchTo().window(id);
+					break;
+				}
+			}
+		}
+		
+		public boolean closeAllWindowsWithoutParent(String ParentID) {
+			Set<String> allWindows = driver.getWindowHandles();
+			
+			for (String runWindows : allWindows) {
+				if (!runWindows.equals(ParentID)) {
+					driver.switchTo().window(runWindows);
+					driver.close();
+				}
+			}
+			driver.switchTo().window(ParentID);
+			if(driver.getWindowHandles().size() == 1)
+				return true;
+			else 
+				return false;
 		}
 
 		

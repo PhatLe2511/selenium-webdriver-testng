@@ -44,7 +44,7 @@ public class Topic_05_Element_III {
 	
 	@BeforeMethod
 	public void BeforeMethod() {
-		driver.get("http://live.techpanda.org/");
+		driver.get("http://live.techpanda.org");
 	}
 	
 	@Test

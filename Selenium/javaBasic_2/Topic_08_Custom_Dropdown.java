@@ -129,7 +129,7 @@ public class Topic_08_Custom_Dropdown {
 	public void selectInCustomDropDownList(String parentLocator, String childLocator, String expectedText) {
 		driver.findElement(By.cssSelector(parentLocator)).click();
 		
-		explicitWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.cssSelector(parentLocator)));
+		explicitWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.cssSelector(childLocator)));
 		
 		List<WebElement> allNumbers = driver.findElements(By.cssSelector(childLocator));
 		

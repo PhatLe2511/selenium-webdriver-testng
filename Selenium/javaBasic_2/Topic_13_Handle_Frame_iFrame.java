@@ -86,19 +86,7 @@ public class Topic_13_Handle_Frame_iFrame {
 				System.out.println(course.getText().toLowerCase());
 				Assert.assertTrue(course.getText().toLowerCase().contains(keyword.toLowerCase()));
 			}
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
+						
 		}
 		
 		public void TC_02_Frame() {
